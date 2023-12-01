@@ -1,1 +1,19 @@
+html {
+    background-color: black;
+}
 
+body {
+    color: white;
+    font-family: sans-serif;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-rendering: optimizeLegibility;
+    text-shadow: 0 0 10px black;
+    
+}
+
+.bold {
+    font-weight: bold;
+}
