@@ -1,0 +1,642 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WWP HSN TSA</title>
+        <link rel="stylesheet" href="css/example.css">
+        <link rel="stylesheet" href="css/carousel.css">
+        <link rel = "stylesheet" href = "css/competitions.css">
+        <link rel="stylesheet" href="css/animsition.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+        <link rel="icon" href="img/icon.png">
+
+
+        <style type="text/css">
+            html, body {
+                background: linear-gradient(to right, #1488CC , #2B32B2);
+            }
+        </style>
+
+        <link rel="dns-prefetch" href="//fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/ -icons.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+
+
+        <link href='https://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700' rel='stylesheet' type='text/css'>
+        <link rel = "stylesheet" type = "text/css" href = "css/officers.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <div id="ani" class="animsition">
+    <body data-spy="scroll" data-target="#navbar" data-offset="30">
+        <div class="nav-menu fixed-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <nav class="navbar navbar-dark navbar-expand-lg">
+                            <a class="navbar-brand" href="index.html#home"><img src="" class="img-fluid" alt=""><b>W.W.P HSN</b></a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>                        
+                                <div class="collapse navbar-collapse" id="navbar">
+                                    <ul class="navbar-nav ml-auto">
+                                        <li class="nav-item"> <a class="nav-link active" href="#home">HOME <span class="sr-only">(current)</span></a> </li>
+                                        <li class="nav-item"> <a class="nav-link" href="#research">RESEARCH</a> </li>
+                                        <li class="nav-item"> <a class="nav-link" href="#media">MEDIA</a> </li>
+                                        <li class="nav-item"> <a class="nav-link" href="#frameworks">FRAMEWORKS</a> </li>
+                                        <li class="nav-item"><a id="cte" href="./cte.html#home" class="animsition-link btn btn-outline-light my-3 my-sm-0 ml-lg-3">CTE</a></li>
+                                        <li class="nav-item"><a id="design" href="./design-brief.html" class="animsition-link btn btn-outline-light my-3 my-sm-0 ml-lg-3">DESIGN BRIEF</a></li>
+                                        <li class="nav-item"><a id="chapter" href="./index.html" class="animsition-link btn btn-outline-light my-3 my-sm-0 ml-lg-3">CHAPTER</a></li>
+                                    </ul>
+                                </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header class="bg-gradient2"id="home">
+            <div class = "backgrounddiv2">
+            <div id="container">
+            <header class="info">
+                <hgroup class="about">
+                    <div class="typewriter">
+                        <h1>About Us</h1>
+                    </div>
+                </hgroup>
+            </header>
+            </div>
+            </div>
+        </header>
+        <script src="./js/sketch.js"></script>
+        <script  src="./js/timeline.js"></script>
+        <script src = "js/jquery-3.2.1.min.js"></script>   
+        <script src="./js/bootstrap.bundle.min.js"></script>
+        <script src="./js/owl.carousel.min.js"></script>
+        <script src="./js/script.js"></script>
+        <script src="./js/cards.js"></script>
+
+        
+        <script>
+            if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+            } else {
+         
+            function Particle( x, y, radius ) {
+                this.init( x, y, radius );
+            }
+
+            Particle.prototype = {
+
+                init: function( x, y, radius ) {
+
+                    this.alive = true;
+
+                    this.radius = radius || 10;
+                    this.wander = 0.15;
+                    this.theta = random( TWO_PI );
+                    this.drag = 0.92;
+                    this.color = '#fff';
+
+                    this.x = x || 0.0;
+                    this.y = y || 0.0;
+
+                    this.vx = 0.0;
+                    this.vy = 0.0;
+                },
+
+                move: function() {
+
+                    this.x += this.vx;
+                    this.y += this.vy;
+
+                    this.vx *= this.drag;
+                    this.vy *= this.drag;
+
+                    this.theta += random( -0.5, 0.5 ) * this.wander;
+                    this.vx += sin( this.theta ) * 0.1;
+                    this.vy += cos( this.theta ) * 0.1;
+
+                    this.radius *= 0.96;
+                    this.alive = this.radius > 0.5;
+                },
+
+                draw: function( ctx ) {
+
+                    ctx.beginPath();
+                    ctx.arc( this.x, this.y, this.radius, 0, TWO_PI );
+                    ctx.fillStyle = this.color;
+                    ctx.fill();
+                }
+            };
+
+          
+
+            var MAX_PARTICLES = 280;
+            var COLOURS = [ '#ecf0f1', '#2980b9', '#273c75', ];
+
+            var particles = [];
+            var pool = [];
+
+            var demo = Sketch.create({
+                container: document.getElementById( 'container' ),
+                retina: 'auto'
+            });
+
+
+
+            demo.setup = function() {
+
+                // Set off some initial particles.
+                var i, x, y;
+
+                for ( i = 0; i < 50; i++ ) {
+                    x = ( demo.width * 0.5 ) + random( -100, 100 );
+                    y = ( demo.height * 0.5 ) + random( -100, 100 );
+                    demo.spawn( x, y);               
+                }
+            };
+
+            demo.spawn = function( x, y ) {
+
+                var particle, theta, force;
+
+                if ( particles.length >= MAX_PARTICLES )
+                    pool.push( particles.shift() );
+
+                particle = pool.length ? pool.pop() : new Particle();
+                particle.init( x, y, random( 5, 40 ) );
+
+                particle.wander = random( 0.5, 2.0 );
+                particle.color = random( COLOURS );
+                particle.drag = random( 0.9, 0.99 );
+
+                theta = random( TWO_PI );
+                force = random( 2, 8 );
+
+                particle.vx = sin( theta ) * force;
+                particle.vy = cos( theta ) * force;
+
+                particles.push( particle );
+            };
+
+
+
+            demo.update = function() {
+
+                var i, particle;
+
+                for ( i = particles.length - 1; i >= 0; i-- ) {
+
+                    particle = particles[i];
+
+                    if ( particle.alive ) particle.move();
+                    else pool.push( particles.splice( i, 1 )[0] );
+                }
+            };
+
+            demo.draw = function() {
+
+                demo.globalCompositeOperation  = 'lighter';
+
+                for ( var i = particles.length - 1; i >= 0; i-- ) {
+                    particles[i].draw( demo );
+                }
+            };
+
+            demo.mousemove = function() {
+
+                var particle, theta, force, touch, max, i, j, n;
+
+                for ( i = 0, n = demo.touches.length; i < n; i++ ) {
+
+                    touch = demo.touches[i], max = random( 1, 4 );
+                    for ( j = 0; j < max; j++ ) {
+                        demo.spawn( touch.x, touch.y );
+                    }
+
+                }
+            };
+            };
+
+        </script>
+
+         <!-- 
+Who We Are beginning
+-->
+        <div class="section" id="research">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-10 col-lg-12 mx-auto">
+                        <h3 class="section-heading mb-4 text-white">
+                            Research Sources
+                        </h3>
+                        <p class = "text-white">
+                                Farr, Christina. “The First Study Of Self-Driving Car Crash Rates Suggests They Are Safer.” Fast Company, Fast Company, 12 Jan. 2016, www.fastcompany.com/3055356/the-first-study-of-self-driving-car-crash-rates-suggests-they-are-safer.
+                                <br>
+                                <br>
+                                Kaushik, Preetam. “Is Artificial Intelligence the Way Forward for Personal Finance?” Wired, Conde Nast, 7 Aug. 2015, www.wired.com/insights/2014/02/artificial-intelligence-way-forward-personal-finance/.
+                                <br>
+                                <br>
+                                Klein, Mike. “Google's AlphaZero Destroys Stockfish In 100-Game Match.” Chess.com, Chess.com, 6 Dec. 2017, www.chess.com/news/view/google-s-alphazero-destroys-stockfish-in-100-game-match.
+                                <br>
+                                <br>
+                                Knight, Will. “A New AI Algorithm Summarizes Text Amazingly Well.” MIT Technology Review, MIT Technology Review, 14 May 2017, www.technologyreview.com/s/607828/an-algorithm-summarizes-lengthy-text-surprisingly-well/.
+                                <br>
+                                <br>
+                                Quora. “The Future Of Massively Open Online Courses (MOOCs).” Forbes, Forbes Magazine, 23 Mar. 2017, www.forbes.com/sites/quora/2017/03/23/the-future-of-massively-open-online-courses-moocs/#160c1f696b83.
+                                <br>
+                                <br>
+                                Sagin, Erin. “What the New AdWords Ad Rank Algorithm Really Means.” WordStream, 30 Jan. 2018, www.wordstream.com/blog/ws/2013/10/24/adwords-ad-rank-algorithm.
+                                <br>
+                                <br>
+                                Litman, www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/view/12310.
+                                <br>
+                                <br>
+                                Gaskell, Adi. “Machine Learning And The Future Of Education.” Forbes, Forbes Magazine, 7 Nov. 2016, www.forbes.com/sites/adigaskell/2016/11/04/machine-learning-and-the-future-of-education/#327d9e997693.
+                                <br>
+                                <br>
+                                Hof, Robert D. “Is Artificial Intelligence Finally Coming into Its Own?” MIT Technology Review, MIT Technology Review, 29 Mar. 2016, www.technologyreview.com/s/513696/deep-learning/.
+                                <br>
+                                <br>
+                                IBM. “What Is Watson.” IBM Watson, 15 Oct. 2017, www.ibm.com/watson/about/index.html.
+                                <br>
+                                <br>
+                                “Mika™ It's Time to Expect More from Higher Ed Math Courseware.” Math Courseware for Higher Ed | Mika by Carnegie Learning, www.carnegielearning.com/products/software-platform/mika-learning-software/#slide02.
+                                <br>
+                                <br>
+                                Momoh, Osi. “Natural Language Processing (NLP).” Investopedia, 7 Mar. 2018, www.investopedia.com/terms/n/natural-language-processing-nlp.asp.
+                                <br>
+                                <br>
+                                Newnham, Danielle. “The Story Behind Siri – The Startup – Medium.” Medium, The Startup, 21 Aug. 2015, medium.com/swlh/the-story-behind-siri-fbeb109938b0.
+                                <br>
+                                <br>
+                                “On 'Jeopardy!' Watson Win Is All but Trivial.” The New York Times, The New York Times, 16 Feb. 2011, www.nytimes.com/2011/02/17/science/17jeopardy-watson.html?pagewanted=all.
+                                <br>
+                                <br>
+                                Sennaar, Kumba. “The Artificial Intelligence Tutor - The Current Possibilities of Smart Virtual Learning.” TechEmergence, 2 Nov. 2017, www.techemergence.com/artificial-intelligence-tutor-current-possibilities-smart-virtual-learning/.
+                                <br>
+                                <br>
+                                “Your Project - Google Science Fair 2015.” Your Project - Google Science Fair, www.googlesciencefair.com/projects/en/2015/7151ae4ff6b70198aafc08fbee39127ad0913cd407d98d8b596a85c14ed57ba9.
+                                <br>
+                                <br>
+                                “Program of Studies 2018-2019.” Program of Studies, 2018, www.ww-p.org/common/pages/DisplayFile.aspx?itemId=41019639.
+                        </p>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Who We Are closing-->
+        <!-- 
+What is TSA beginning
+-->
+        <div class="section bg-white" id="media">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-10 col-lg-12 mx-auto">
+                        <h3 class="section-heading mb-4">
+                            Media Sources
+                        </h3>
+                        <p>All pictures used are either royalty free or were taken or created by the HSN TSA Webmaster team. Illustrations were created using Adobe Photoshop and Adobe Illustrator. Royalty free & copyright free icons were provided by Freepix and Iconsplace. <br><br> “Freepix.” Freepix, image.freepik.com/free-icon/nut-icon_318-84971.jpg. <br><br> “Iconsplace.” Iconsplace, www.iconsplace.com/icons/preview/white/number-3-filled-256.png. 
+                            <br><br> “Iconsplace.” Iconsplace, www.iconsplace.com/icons/preview/white/number-2-filled-256.png.
+                            <br><br> “Iconsplace.” Iconsplace, www.iconsplace.com/icons/preview/white/number-1-filled-256.png.
+                            <br><br> “Iconsplace.” Iconsplace, www.iconsplace.com/icons/preview/white/number-4-filled-256.png.
+                        
+                        </p>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 
+What is TSA closing
+-->
+        <!-- 
+Who We Are beginning
+-->
+        <div class="section" id="frameworks">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-10 col-lg-12 mx-auto">
+                        <h3 class="section-heading mb-4 text-white">
+                            Frameworks
+                        </h3>
+                        <p class = "text-white">
+                            All content built on top of these frameworks is the original work of the HSN TSA Webmaster team.
+                        </p>
+                        <p class = "text-white">
+
+
+<b> Sketch.js </b>
+<br><br>
+The MIT License
+Copyright (C) 2013 Justin Windle. http://soulwire.co.uk 
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+                               <br><br>
+                                <b> BotUI.js </b>
+                                <br><br>
+                                
+                                
+                                MIT License
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                Copyright (c) 2017 Moin Uddin
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                Permission is hereby granted, free of charge, to any person obtaining a copy
+                                
+                                
+                                of this software and associated documentation files (the "Software"), to deal
+                                
+                                
+                                in the Software without restriction, including without limitation the rights
+                                
+                                
+                                to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+                                
+                                
+                                copies of the Software, and to permit persons to whom the Software is
+                                
+                                
+                                furnished to do so, subject to the following conditions:
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                The above copyright notice and this permission notice shall be included in all
+                                
+                                
+                                copies or substantial portions of the Software.
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+                                
+                                
+                                IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+                                
+                                
+                                FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+                                
+                                
+                                AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+                                
+                                
+                                LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+                                
+                                
+                                OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+                                
+                                
+                                SOFTWARE.
+                                
+                                
+                                <br><br>
+                                <b> Bootstrap </b>
+                                
+                                <br><br>
+                                
+                                The MIT License (MIT)
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                Copyright (c) 2011-2018 Twitter, Inc.
+                                
+                                
+                                Copyright (c) 2011-2018 The Bootstrap Authors
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                Permission is hereby granted, free of charge, to any person obtaining a copy
+                                
+                                
+                                of this software and associated documentation files (the "Software"), to deal
+                                
+                                
+                                in the Software without restriction, including without limitation the rights
+                                
+                                
+                                to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+                                
+                                
+                                copies of the Software, and to permit persons to whom the Software is
+                                
+                                
+                                furnished to do so, subject to the following conditions:
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                The above copyright notice and this permission notice shall be included in
+                                
+                                
+                                all copies or substantial portions of the Software.
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+                                
+                                
+                                IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+                                
+                                
+                                FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+                                
+                                
+                                AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+                                
+                                
+                                LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+                                
+                                
+                                OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+                                
+                                
+                                THE SOFTWARE.
+                                
+                                <br><br>
+
+                                <b> jQuery </b>
+                                <br><br>
+                                
+                                Copyright (c) JS Foundation and other contributors, https://js.foundation/ 
+                                
+                                Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: 
+                                
+                                The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. 
+                                
+                                THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+                                
+                                <br><br>
+
+                                <b> Animsition </b>
+                                <br><br>
+
+                                The MIT License (MIT)
+
+Copyright (c) 2013-2015 blivesta
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+<br><br>
+
+<b> Font Awesome </b>
+<br><br>
+
+The MIT License (MIT)
+
+Copyright (c) 2012-2016 Font Awesome
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+<br><br>
+
+<b> Owl Carousel </b>
+<br><br>
+
+Copyright (c) 2014 Owl
+Modified work Copyright 2016-2018 David Deutsch
+
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the "Software"), to deal in the Software without
+restriction, including without limitation the rights to use,
+copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the
+Software is furnished to do so, subject to the following
+conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
+
+</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Who We Are closing-->
+  
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.3/vue.min.js'></script>
+        <script  src="js/competitions.js"></script>
+        <footer class="my-5 text-center">
+            <small>
+                <a href="" style="text-decoration:none" class="m-2">Webmaster Team T5248 </a>
+                <br>
+                <a href="" style="text-decoration:none" class="m-2">COPYRIGHT © 2018. West Windsor Plainsboro High School North TSA</a>
+            </small>
+        </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="js/animsition.min.js"></script>
+
+        <script>
+        var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor)
+
+        if(isChrome)
+        {
+            $(document).ready(function() {
+                $(".animsition").animsition({
+                    inClass: 'zoom-in',
+                    outClass: 'zoom-out',
+                    inDuration: 1500,
+                    outDuration: 800,
+                    linkElement: '.animsition-link',
+                    loading: true,
+                    loadingParentElement: 'body', 
+                    loadingClass: 'animsition-loading',
+                    loadingInner: '',
+                    timeout: false,
+                    timeoutCountdown: 5000,
+                    onLoadEvent: true,
+                    browser: [ 'animation-duration', '-webkit-animation-duration'],
+                    overlay : false,
+                    overlayClass : 'animsition-overlay-slide',
+                    overlayParentElement : 'body',
+                    transition: function(url){ window.location.href = url; }
+                 });
+                });
+        }
+        else
+        {
+            var NAME = document.getElementById("ani");
+            var currentClass = NAME.className;
+            NAME.className = "";
+
+            var NAME = document.getElementById("cte");
+            var currentClass = NAME.className;
+            NAME.className = "btn btn-outline-light my-3 my-sm-0 ml-lg-3";
+    
+            var NAME = document.getElementById("design");
+            var currentClass = NAME.className;
+            NAME.className = "btn btn-outline-light my-3 my-sm-0 ml-lg-3";
+
+            var NAME = document.getElementById("chapter");
+            var currentClass = NAME.className;
+            NAME.className = "btn btn-outline-light my-3 my-sm-0 ml-lg-3";
+        }
+        </script>
+
+    </body>
+    </div> 
+</html>

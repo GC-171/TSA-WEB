@@ -1,0 +1,68 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans);
+
+.cardd {
+  background-color: #f4f4f4;
+  width: 300px;
+  margin: 10px auto;
+  display: 50px;
+  box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.7);
+}
+
+.cardd-header {
+  overflow: hidden;
+  width: 100%;
+  max-height: 200px;
+}
+
+.cardd-header img{
+  width: 100%;
+}
+
+.cardd-content {
+  width: 85%;
+  margin: 35px auto;
+}
+
+.cardd-content h3 {
+  font-size: 25px;
+  margin-bottom: 0;
+  color: #303F9F;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.cardd-content h4 {
+  font-size: 15px;
+  margin-top: 0;
+  color: #CC9AD3;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.cardd-content p {
+  color: #727272;
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+  
+}
+
+.cardd-footer {
+  border-top: solid 1px #B6B6B6;
+  padding: 5px;
+}
+
+.cardd-footer ul {
+  padding: 0;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+.cardd-footer ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 5px;
+}
+
+.cardd-footer ul li i {
+  font-size: 2em;
+  color: #3F51B5;
+}

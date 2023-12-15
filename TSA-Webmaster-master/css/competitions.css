@@ -1,0 +1,139 @@
+.app {
+    font-family: 'Avenir Next', sans-serif;
+    color: #031d3d;
+    padding-bottom: 152px;
+  }
+   
+  .container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 38px;
+    box-sizing: border-box;
+  }
+   
+  button {
+    border: none;
+    background: none;
+    font-size: inherit;
+    color: inherit;
+    font-family: inherit;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+  }
+   
+  .accordions__controls {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 38px;
+    padding-bottom: 19px;
+  }
+  .accordions__control {
+    font-weight: 600;
+    font-size: 18px;
+    color: #00a5a9;
+    transition: color .3s ease-in-out;
+  }
+  .accordions__control:hover, .accordions__control:focus {
+    color: #031d3d;
+  }
+  .accordions__header {
+    font-size: 32px;
+    font-weight: 600;
+    background-color: #f0f0f0;
+    position: relative;
+  }
+  .accordions__container {
+    display: flex;
+  }
+  .accordions__title {
+    position: relative;
+    padding: 28px 0;
+    padding-right: 38px;
+    flex: 1;
+    z-index: 2;
+    background-color: #f0f0f0;
+  }
+  /*
+  .accordions__title::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    border-bottom: solid 1px #d3d3d3;
+    z-index: 1;
+  }
+  */
+  .accordions__button {
+    color: white;
+    padding-left: 38px;
+    padding-right : 38px;
+    line-height: 1;
+  /*  transition: padding .3s ease-in-out;*/
+    background-color: #48545F;
+  }
+  .accordions__button::before {
+   
+  /*
+    content: '';
+    background-color: #08ced2;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    bottom: -2px;
+    z-index: 1;
+    border-bottom: solid 1px #09a5a8;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out, border-color .3s ease-in-out;
+  */
+   
+  }
+  .accordions__button:hover {
+    padding-right: 38px;
+  }
+  .accordions__button:hover::before {
+    background-color: #09a5a8;
+  }
+  .accordions__button:focus::before {
+    background-color: #09a5a8;
+  }
+  .accordions__button:active, .accordions__button--active {
+    padding-right: 38px;
+  }
+  .accordions__button:active::before, .accordions__button--active::before {
+    background-color: #031d3d !important;
+    border-bottom: solid 1px #031730;
+  }
+  .accordions__button:active .accordions__icon, .accordions__button--active .accordions__icon {
+    transform: rotate(45deg);
+  }
+  .accordions__icon {
+    position: relative;
+    z-index: 2;
+    transition: transform .3s ease-in-out;
+  }
+  .accordions__content {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 1.2s ease-in-out, opacity .6s ease-in-out .6s, transform .6s ease-in-out .6s;
+    transform: translateY(38px);
+  }
+  .accordions__content--expanded {
+    max-height: 200vh;
+    opacity: 1;
+    padding-bottom: 76px;
+    transform: none;
+  }
+   
+  .rich-text {
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .rich-text p {
+    margin-top: 38px;
+  }

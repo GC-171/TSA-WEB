@@ -1,0 +1,772 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Akshit Dewan">
+        <title>WWP HSN TSA</title>
+        <link rel="stylesheet" href="css/example.css">
+        <link rel="stylesheet" href="css/carousel.css">
+        <link rel = "stylesheet" href = "css/competitions.css">
+        <link rel="stylesheet" href="css/animsition.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+        <link rel="icon" href="img/icon.png">
+
+
+        <style type="text/css">
+            html, body {
+                background: linear-gradient(to right, #1488CC , #2B32B2);
+            }
+        </style>
+
+        <!-- Font -->
+        <link rel="dns-prefetch" href="//fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/ -icons.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+
+
+        <link href='https://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700' rel='stylesheet' type='text/css'>
+        <link rel = "stylesheet" type = "text/css" href = "css/awards.css">
+        <link rel = "stylesheet" type = "text/css" href = "css/officers.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head> 
+
+    <div id="ani" class="animsition"> 
+        <body data-spy="scroll" data-target="#navbar" data-offset="30">
+            <div class="nav-menu fixed-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <nav class="navbar navbar-dark navbar-expand-lg">
+                                <a class="navbar-brand" href="index.html#home"><img src="" class="img-fluid" alt=""><b>W.W.P HSN</b></a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+
+                                <div class="collapse navbar-collapse" id="navbar">
+                                    <ul class="navbar-nav ml-auto">
+                                        <li class="nav-item"> <a class="nav-link active" href="#home">HOME <span class="sr-only">(current)</span></a> </li>
+                                        <li class="nav-item"> <a class="nav-link" href="#what_is_tsa">ABOUT</a> </li>
+                                        <li class="nav-item"> <a class="nav-link" href="#activities">ACTIVITIES</a> </li>
+                                        <li class="nav-item"> <a class="nav-link" href="#student_projects">PROJECTS</a> </li>
+                                        <li class="nav-item"> <a class="nav-link" href="#officers">OFFICERS</a> </li>
+                                        <li class="nav-item"> <a class="nav-link" href="#competitions">COMPETITIONS</a> </li>
+                                        <li class="nav-item"><a id="cte" href="./cte.html#home" class="animsition-link btn btn-outline-light my-3 my-sm-0 ml-lg-3">CTE</a></li>
+                                        <li class="nav-item"><a id="design" href="./design-brief.html" class="animsition-link btn btn-outline-light my-3 my-sm-0 ml-lg-3">DESIGN BRIEF</a></li>
+                                        <li class="nav-item"><a id="about" href="./about.html" class="animsition-link btn btn-outline-light my-3 my-sm-0 ml-lg-3">ABOUT</a></li>
+
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <header class="bg-gradient2"id="home">
+                <div class = "backgrounddiv2">
+                    <div id="container">
+                        <header class="info">
+                            <hgroup class="about">
+                                <div class="typewriter">
+                                    <h1>Our TSA Chapter</h1>
+                                </div>
+                            </hgroup>
+                        </header>
+                    </div>
+                </div>
+            </header>
+            <script src="./js/sketch.js"></script>
+            <script  src="./js/timeline.js"></script>
+            <script src = "js/jquery-3.2.1.min.js"></script>   
+            <script src="./js/bootstrap.bundle.min.js"></script>
+
+            <script src="./js/owl.carousel.min.js"></script>
+            <script src="./js/script.js"></script>
+            <script src="./js/cards.js"></script>
+
+
+            <script>
+                if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+                } else {
+
+                    function Particle( x, y, radius ) {
+                        this.init( x, y, radius );
+                    }
+
+                    Particle.prototype = {
+
+                        init: function( x, y, radius ) {
+
+                            this.alive = true;
+
+                            this.radius = radius || 10;
+                            this.wander = 0.15;
+                            this.theta = random( TWO_PI );
+                            this.drag = 0.92;
+                            this.color = '#fff';
+
+                            this.x = x || 0.0;
+                            this.y = y || 0.0;
+
+                            this.vx = 0.0;
+                            this.vy = 0.0;
+                        },
+
+                        move: function() {
+
+                            this.x += this.vx;
+                            this.y += this.vy;
+
+                            this.vx *= this.drag;
+                            this.vy *= this.drag;
+
+                            this.theta += random( -0.5, 0.5 ) * this.wander;
+                            this.vx += sin( this.theta ) * 0.1;
+                            this.vy += cos( this.theta ) * 0.1;
+
+                            this.radius *= 0.96;
+                            this.alive = this.radius > 0.5;
+                        },
+
+                        draw: function( ctx ) {
+
+                            ctx.beginPath();
+                            ctx.arc( this.x, this.y, this.radius, 0, TWO_PI );
+                            ctx.fillStyle = this.color;
+                            ctx.fill();
+                        }
+                    };
+
+
+
+                    var MAX_PARTICLES = 280;
+                    var COLOURS = [ '#ecf0f1', '#2980b9', '#273c75', ];
+
+                    var particles = [];
+                    var pool = [];
+
+                    var demo = Sketch.create({
+                        container: document.getElementById( 'container' ),
+                        retina: 'auto'
+                    });
+
+
+
+                    demo.setup = function() {
+
+                        var i, x, y;
+
+                        for ( i = 0; i < 50; i++ ) {
+                            x = ( demo.width * 0.5 ) + random( -100, 100 );
+                            y = ( demo.height * 0.5 ) + random( -100, 100 );
+                            demo.spawn( x, y);               
+                        }
+                    };
+
+                    demo.spawn = function( x, y ) {
+
+                        var particle, theta, force;
+
+                        if ( particles.length >= MAX_PARTICLES )
+                            pool.push( particles.shift() );
+
+                        particle = pool.length ? pool.pop() : new Particle();
+                        particle.init( x, y, random( 5, 40 ) );
+
+                        particle.wander = random( 0.5, 2.0 );
+                        particle.color = random( COLOURS );
+                        particle.drag = random( 0.9, 0.99 );
+
+                        theta = random( TWO_PI );
+                        force = random( 2, 8 );
+
+                        particle.vx = sin( theta ) * force;
+                        particle.vy = cos( theta ) * force;
+
+                        particles.push( particle );
+                    };
+
+
+
+                    demo.update = function() {
+
+                        var i, particle;
+
+                        for ( i = particles.length - 1; i >= 0; i-- ) {
+
+                            particle = particles[i];
+
+                            if ( particle.alive ) particle.move();
+                            else pool.push( particles.splice( i, 1 )[0] );
+                        }
+                    };
+
+                    demo.draw = function() {
+
+                        demo.globalCompositeOperation  = 'lighter';
+
+                        for ( var i = particles.length - 1; i >= 0; i-- ) {
+                            particles[i].draw( demo );
+                        }
+                    };
+
+                    demo.mousemove = function() {
+
+                        var particle, theta, force, touch, max, i, j, n;
+
+                        for ( i = 0, n = demo.touches.length; i < n; i++ ) {
+
+                            touch = demo.touches[i], max = random( 1, 4 );
+                            for ( j = 0; j < max; j++ ) {
+                                demo.spawn( touch.x, touch.y );
+                            }
+
+                        }
+                    };
+                };
+
+            </script>
+            <!-- 
+What is TSA beginning
+-->
+            <div class="section bg-white" id="what_is_tsa">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-10 col-lg-12 mx-auto">
+                            <h3 class="section-heading mb-4">
+                                What is TSA
+                            </h3>
+                            <p>TSA (Technology Student Association) is a national organization dedicated to creating future leaders in the science, technology, engineering, and mathematics fields. The organization uses its yearly set of competitions to test the abilities of the students competing in the event. In addition to expanding their knowledge, the members are able to represent their school and community when competing. </p>
+                            <p>The TSA motto “learning to lead in a technical world” is precisely what the organization is working towards, as the club has opened branches in 48 of the 50 states. The overall mission of TSA is to have the members of the club learn and develop their skills in the STEM department and to eventually implement them on solutions towards the world’s most concerning problems.</p>
+
+                            <h4 class="section-heading mb-4">
+                                TSA Events
+                            </h4>
+
+                            <p>TSA has more than 30 competitive events that range in topics covering science, technology, engineering, art, and math. </p>
+                            <p> To help students figure out what events are what best for them, the HSN TSA chapter has created an automated event suggestion tool! </p></p>
+
+                        <a href="eventfinder.html" class="btn btn-primary">TSA Event Finder Tool</a>
+                    </div>           
+                </div>
+
+            </div>
+            </div>
+    </div>
+    <!-- 
+What is TSA closing
+-->
+    <!-- 
+Who We Are beginning
+-->
+        <div class="section" id="who_we_are">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-10 col-lg-12 mx-auto">
+                        <h3 class="section-heading mb-4 text-white">
+                            Who We Are
+                        </h3>
+                        <p class = "text-white">We are WWP High School North’s TSA club, competing in the school’s first TSA season. The officers of the club observed the impact of TSA on the surrounding communities and decided to bring the opportunity to the students of West Windsor and Plainsboro.
+                        </p>
+                        <p class = "text-white">Despite the lengthy process of getting the club approved in the school, the officers stayed persistent and were able to establish the club in school before the September of 2017. The club was founded with enough time to publicly introduce the club at the school club fair, where <b>63</b> loyal members were recruited. The chapter collectively participated in <b>17</b> competitive events for the first time at the NJ state conference this spring. We are now competing in 6 competitive events at the National Conference from June 22nd to June 26th. </p>
+                        <h3 class = "text-white">Creed</h3>
+                        <p class = "text-white">I believe in using technology to <b>make the world a better place.</b> I believe in <b>collaborating with others</b> to create beneficial solutions for the future. I believe that I should be dedicated to creating new technologies and <b>educating others about technology.</b> I will strive to better the world around us and to <b>spread the influence of technology.</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Who We Are closing-->
+    <!-- our activites opening -->
+    <div class="section bg-light" id = "activities">
+        <div class="container">
+            <div class="section-title">
+                <h3>Our Activities</h3>
+            </div>
+
+            <ul class="nav nav-tabs nav-justified" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#meetings">Meetings</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#recruitment">Recruitment</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#involvement">Involvement</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#community">Community</a>
+                </li>
+            </ul>
+
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="meetings">
+                    <div class="d-flex flex-column flex-lg-row">
+                        <div>
+
+                            <h2> Meetings</h2>
+                            <h4>Attendance & Checkpoints</h4>
+                            <p>Before the start of every club meeting, each student must sign in to attendance via Google Form. Once a month, the officers send a checkpoint form through email to check up on the progress of each group. During the weekly after school meeting following this checkpoint, the officers meet with each group in person to check in on their progress, answer questions, and help them plan for the next week. The officers will advise each group as they move closer to the competition dates.
+                            </p>
+                            <h4>Weekly After School Meetings</h4>
+                            <p> 
+                                To keep all students intact with their TSA event, the club runs weekly meetings to regroup the teams and update each other on any group progress. The club officers begin the meetings with recaps on competition dates, event updates, and general announcements. Throughout the meetings, students in each event regroup to share their personal progress on the project and to collaborate on plans for the upcoming competitions.
+                            </p>
+                            <div>
+                                <img style="width:auto; height:350px"src="img/weeklymeetings1.JPG"/>
+                                <img style=" width:auto; height:350px" src="img/weeklymeetings2.JPG"/>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="recruitment">
+                    <div class="d-flex flex-column flex-lg-row">
+                        <div>
+                            <h2>Recruitment</h2>
+                            <h4>Club Fair</h4>
+                            <p>Club Fair is a school program where each club has a chance to directly recruit members by recording their contact information. The TSA club of High School North was able to gain 63 loyal members through that short fair, and we hope to expand on that number by next year’s fair.
+                            </p>
+                            <h4>Lab Safety Training</h4>
+                            <p> The lab safety training is a TSA school club program that trains each student on the different engineering equipment available to them. Once they finish the lesson, they have 3 chances to pass a quiz on the lab information. The quiz is to ensure that everyone who goes into the lab room has enough experience and knowledge to ensure their own safety and the safety of those around them. If the student passes the quiz, they will have access to all the lab’s machinary.
+                            </p>
+                            <div>
+                                <img style="width:auto; height:250px"src="img/lab1.png"/>
+                                <img style="width:auto; height:250px" src="img/lab2.png"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="involvement">
+                    <div class="d-flex flex-column flex-lg-row">
+                        <div>
+                            <h2>Involvement</h2>
+                            <h4>Guest Speakers</h4>
+                            <p>To inspire the students and expose them to other applications of technology, the President of the chapter asked for a few guests to speak at one of the weekly meetings. The guests were a self initiated FIRST FTC robotics team and their mentor, who demoed their robot and spoke about their programming design.
+                            </p>
+                            <div>
+                                <img style="width:auto; height:280px"src="img/guest1.jpeg"/>
+                                <img style="width:auto; height:280px" src="img/guest2.JPG"/>
+                            </div>
+                            <br>
+                            <h4>Party</h4>
+                            <p> To celebrate New Years, the students held a party at one of the weekly meetings in January. The party became a quick success as all the members of the club had brought different food items to contribute. Students shared their projects with other groups, enjoying themselves and each other's company.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="community">
+                    <div class="d-flex flex-column flex-lg-row">
+                        <div>
+                            <h2>Community</h2>
+                            <h4>Project Code</h4>
+                            <p>Project Code is a community program founded by 3 members of our TSA chapter to provide elementary school kids access to free programming classes. Members of our TSA chapter created a 3 month long Scratch programming curriculum, contacted libraries, and promoted the classes to the community. So far, the team has taught 90 students in 2 local libraries - Hamilton and Monroe.
+                            </p>
+                            <div>
+                                <img style="width:auto; height:350px"src="img/projectcode1.jpg"/>
+                                <img style="width:auto; height:350px" src="img/projectcode2.jpg"/>
+                            </div>
+
+                            <br>
+                            <h4>Innovation Fair</h4>
+                            <p> 
+                                Another way the TSA club helps to promote the TSA motto is by encouraging its own school members to showcase their TSA projects in the community. The Innovation Fair in West Windsor-Plainsboro is a public community fair held in May where students from different schools come to display their innovative projects. Members of our TSA chapter have been accepted to showcase their projects at this fair this spring.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- our activites closing-->
+    <div class="section text-white" id="student_projects">
+        <div class="section">
+            <div class="container">
+                <div class="section-title">
+                    <h3 class = "text-white">STUDENT PROJECTS</h3>
+                </div>
+                <div class="testimonials owl-carousel">
+                    <div class="testimonials-single">
+                        <h3 class = "text-white">Biotechnology Design</h3>
+                        <br>
+                        <div class = "row">
+                            <div class = "bqcontainer col col-lg-7">
+                                <blockquote class="blockquote text-white">One of the events our club is competing in is Biotechnology Design. Because this year’s topic was food, the group  focused on how biological diseases in Eastern Africa are inhibiting the growth of crops and destroying food supplies. This group took the challenge head on by consulting  the school’s AP Biology teachers and analyzing research from professors, to write an extensive research paper and create a solution to eradicate the problem.
+                                </blockquote>
+                            </div>
+                            <img  class = "col col-lg-5" style="height:280px; width:auto;" src = "./img/biotechnology.jpg">
+                        </div>
+                    </div>
+                    <div class="testimonials-single">
+                        <h3 class = "text-white">Video Game Design</h3>
+                        <br>
+                        <div class = "row">
+                            <div class = "bqcontainer col col-lg-7">
+                                <blockquote class="blockquote text-white">The video game design group was challenged to create a sports themed game. The 6 participants of this event were very innovative on their approach to the challenge; they wanted to create a game based off a sport that is not very commonly seen as a game. The team used a cross-platform game engine, Unity, to create a high quality car racing game. 
+                                </blockquote>
+                            </div>
+                            <img class = "col col-lg-5" style="height:280px; width:auto;"  src = "./img/videogame.jpg">
+                        </div>
+                    </div>
+                    <div class="testimonials-single">
+                        <h3 class = "text-white">Children's Stories</h3>
+                        <br>
+                        <div class="row">
+                            <div class = "bqcontainer col col-lg-7">
+                                <blockquote class="blockquote text-white">
+                                    This year, the challenge for the TSA Children stories event was to design an electronically enhanced story book. The team was able to come up with a very creative final project as each member of the group had different strengths that they brought to the table. Some members were very strong in software engineering and computer science while others were tutors who understood the fundations from which children learn.  This combination of talented members helped the event group create an eloquent children’s story.
+                                </blockquote>
+                            </div>
+                            <img class = "col col-lg-5" style="height:280px; width:auto;"  src = "./img/childrens-stories.jpg">
+                        </div>
+                    </div>
+                    <div class="testimonials-single">
+                        <h3 class = "text-white">Digital Video Production</h3>
+                        <br>
+                        <div class = "row">
+                            <div class = "bqcontainer col col-lg-7">
+                                <blockquote class="blockquote text-white">
+                                    The digital video production group was challenged to make a public service announcement and a digital video. This group created an infomercial for the TSA children stories event. They used Final Cut Pro and Adobe After Effects to create a video using high-quality VFX.
+                                </blockquote>
+                            </div>
+                            <img class = "col col-lg-5" style="height:280px;width:auto;"  src = "./img/digital-production.jpg">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- officers begin -->
+    <div class = "white section" id = "officers">
+        <div class="section-title">
+            <h3>OUR OFFICERS </h3>
+        </div>
+        <div class="card">
+            <div class="products">
+                <div class="product active" product-id="1">
+                    <div class="thumbnail"><img src="officers/sahit.png"/></div>
+                    <h3>Sahit Penmatcha</h3>
+                    <h4>President</h4>
+                    <p class="description">Sahit is a founder and president of WWP HSN TSA. He is passionate about computer science and would like to share his love for computers with others through TSA. The president manages the overall meeting, informs the committee about what should be done, and sets up meetings with various sources.</p>
+                </div>
+                <div class="product" product-id="2">
+                    <div class="thumbnail"><img src="officers/neil.png"/></div>
+                    <h3>Neil Patel</h3>
+                    <h4>Vice President</h4>
+                    <p class="description">Neil is a founder and Vice President of TSA. He is interested in video production and photography. The Vice President assists officers in accomplishing tasks assigned by President, and takes control of club if President is not present.
+                    </p>
+                </div>
+                <div class="product" product-id="3">
+                    <div class="thumbnail"><img src="officers/george.png"/></div>
+                    <h3>George Zhou</h3>
+                    <h4>Secretary</h4>
+                    <p class="description">George holds the secretary position. He has a passion for STEM and is particularly interested in software development. The secretary records the participation of the club members and conferences with the students about event progress.
+                    </p>
+                </div>
+                <div class="product" product-id="4">
+                    <div class="thumbnail"><img src="officers/skandan.png"/></div>
+                    <h3>Skandan Venkatraman</h3>
+                    <h4>Treasurer</h4>
+                    <p class="description">Skandan is the club treasurer. He is interested in biology and the medical sciences. The treasurer controls the financial portions of the club, maintains the club’s bank account and updates other officers on account information.</p>
+                </div>
+                <div class="product" product-id="5">
+                    <div class="thumbnail"><img src="officers/aparna.png"/></div>
+                    <h3>Aparna Rajesh</h3>
+                    <h4>Reporter</h4>
+                    <p class="description">Aparna holds the reporter position. She is interested in educating younger children about STEM and spreading STEM in the community. The reporter reports the club’s progress or any news to the public, contributes to the TSA web page and contacts the club president if any urgent news regarding the club is released.
+                    </p>
+                </div>
+                <div class="product" product-id="6">
+                    <div class="thumbnail"><img src="officers/jagdeep.png"/></div>
+                    <h3>Jagdeep Gill</h3>
+                    <h4>Sergeant-At-Arms</h4>
+                    <p class="description">Jagdeep is the club's Sergeant-at-Arms. He loves all things chemistry. The Sergeant-At-Arms organizes the room before every club meeting, assists the President in any procedures or events requiring altering the environment and enforces club rules when necessary.
+                    </p>
+                </div>
+            </div>
+            <div class="footer"><a class="btn pink" cc9ad3 id="prev" href="#" ripple="" ripple-color="#666666">Prev</a><a class="btn" id="next" href="#" ripple="" ripple-color="#666666">Next</a></div>
+        </div>
+    </div>
+    <!-- officers close -->
+    <script>
+        // officers
+        $(document).ready(function() {
+            var getProductHeight = $('.product.active').height();
+
+            $('.products').css({
+                height: getProductHeight
+            });
+
+            function calcProductHeight() {
+                getProductHeight = $('.product.active').height();
+
+                $('.products').css({
+                    height: getProductHeight
+                });
+            }
+
+            function animateContentColor() {
+                var getProductColor = $('.product.active').attr('product-color');
+
+                $('body').css({
+                    background: getProductColor
+                });
+
+                $('.title').css({
+                    color: getProductColor
+                });
+
+                $('.btn').css({
+                    color: getProductColor
+                });
+            }
+
+            var productItem = $('.product'),
+                productCurrentItem = productItem.filter('.active');
+
+            $('#next').on('click', function(e) {
+                e.preventDefault();
+
+                var nextItem = productCurrentItem.next();
+
+                productCurrentItem.removeClass('active');
+
+                if (nextItem.length) {
+
+                    productCurrentItem = nextItem.addClass('active');
+                } else {
+                    productCurrentItem = productItem.first().addClass('active');
+                }
+
+                calcProductHeight();
+                animateContentColor();
+            });
+
+            $('#prev').on('click', function(e) {
+                e.preventDefault();
+
+                var prevItem = productCurrentItem.prev();
+
+                productCurrentItem.removeClass('active');
+
+                if (prevItem.length) {
+                    productCurrentItem = prevItem.addClass('active');
+                } else {
+                    productCurrentItem = productItem.last().addClass('active');
+                }
+
+                calcProductHeight();
+                animateContentColor();
+            });
+
+            $('[ripple]').on('click', function(e) {
+                var rippleDiv = $('<div class="ripple" />'),
+                    rippleSize = 60,
+                    rippleOffset = $(this).offset(),
+                    rippleY = e.pageY - rippleOffset.top,
+                    rippleX = e.pageX - rippleOffset.left,
+                    ripple = $('.ripple');
+
+                rippleDiv.css({
+                    top: rippleY - (rippleSize / 2),
+                    left: rippleX - (rippleSize / 2),
+                    background: $(this).attr("ripple-color")
+                }).appendTo($(this));
+
+                window.setTimeout(function() {
+                    rippleDiv.remove();
+                }, 1900);
+            });
+        });
+    </script>
+    <!-- competitions open  -->
+    <div class = "section">
+        <div class="section-title" id = "competitions">
+            <h3 class = "text-white">OUR COMPETITIONS</h3>
+        </div>
+        <div class="app" id="app">
+            <div class="accordions">
+                <section class="accordions__accordion">
+                    <div class="accordions__header">
+                        <div class="accordions__container container">
+                            <h3 class="accordions__title">NJ TSA State Conference</h3>
+                            <button class="accordions__button" v-on:click="toggleAccordion('Experience')" v-bind:class="{ 'accordions__button--active': isOpen('Experience') }">
+                                <div class="accordions__icon">+</div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container .nobg">
+                        <div class="accordions__content rich-text" v-bind:class="{ 'accordions__content--expanded': isOpen('Experience') }"><p class = "text-white" >The NJ state conference was held on April 14, 2018. It is held every spring at The College Of New Jersey. This year, students from New Jersey competed in over 30 different events and some of the winners are proceeding to the national TSA conference in Atlanta, Georgia. Despite being WWP High School North’s first year at competition, we collectively participated in 17 events with a majority of members doing multiple events.
+                            <br>   
+                            <img width="auto" height="auto" src="img/stateconf.jpg_large"/>
+
+                            </p></div>
+
+                    </div>
+                </section>
+                <section class="accordions__accordion">
+                    <div class="accordions__header">
+                        <div class="accordions__container container">
+                            <h3 class="accordions__title">National TSA Conference</h3>
+                            <button class="accordions__button" v-on:click="toggleAccordion('Insights')" v-bind:class="{ 'accordions__button--active': isOpen('Insights') }">
+                                <div class="accordions__icon">+</div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="accordions__content rich-text" v-bind:class="{ 'accordions__content--expanded': isOpen('Insights') }"><p class = "text-white" >The national TSA conference is from June 22nd to June 26th. This year, it is being held in Atlanta, Georgia. Students from all over the country will be competing in this 5 day long conference, participiating in events ranging from a keynote speech by Todd Thibodeaux to their own competitive events.</p></div>
+                    </div>
+                </section>
+                <section class="accordions__accordion">
+                    <div class="accordions__header">
+                        <div class="accordions__container container">
+                            <h3 class="accordions__title">NJ TSA Leadership Conference</h3>
+                            <button class="accordions__button" v-on:click="toggleAccordion('Credentials')" v-bind:class="{ 'accordions__button--active': isOpen('Credentials') }">
+                                <div class="accordions__icon">+</div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="accordions__content rich-text" v-bind:class="{ 'accordions__content--expanded': isOpen('Credentials') }"><p class = "text-white" >The NJ TSA Leadership Conference was a meeting between all the officers of each participating school’s TSA club in New Jersey. The officers of our club went with curiosity, as a school new to TSA, yet came back with confidence in the club’s goals and members. Each of the officers learned valuable leadership skills interacting with the state officers and other TSA chapters. The officers also participated in a Toy Story themed design challenge, where they had to create a carriage that moved past a zipline.
+                            </p>
+                            <img style="width:auto; height:auto" src="img/stateleadership.JPG"/>
+
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- competitions close  -->
+    <!-- awards open  -->
+    <div class = "white section">
+        <div class="section-title" id = "awards">
+            <h3>OUR AWARDS</h3>
+            <p class = "text-center col-lg-6 col-centered">
+                In our first year as a club, our 63 students placed in 9 total events at the state conference! Some of the winning teams are now heading to the national competition. 
+            </p>
+            <table class = "col-lg-6 col-centered">
+                <thead>
+                    <tr>
+                        <th>Event</th>
+                        <th>Place</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Webmaster</td>
+                        <td> 1st &#x1F947;</td>
+                    </tr>
+                    <tr>
+                        <td>Digital Production</td>
+                        <td> 1st &#x1F947;</td>
+                    </tr>
+                    <tr>
+                        <td>Software Development</td>
+                        <td> 1st &#x1F947;</td>
+                    </tr>
+                    <tr>
+                        <td>Flight Endurance</td>
+                        <td> 1st &#x1F947;</td>
+                    </tr>
+                    <tr>
+                        <td>Structural Design And Engineering</td>
+                        <td> 2nd &#x1F948;</td>
+                    </tr>
+                    <tr>
+                        <td>Children's Stories</td>
+                        <td> 2nd &#x1F948;</td>
+                    </tr>
+                    <tr>
+                        <td>System Control Technology</td>
+                        <td> 2nd &#x1F948;</td>
+                    </tr>
+                    <tr>
+                        <td>Video Game Design</td>
+                        <td> 3rd &#x1F949;</td>
+                    </tr>
+                    <tr>
+                        <td>Music Production</td>
+                        <td> 3rd &#x1F949;</td>
+                    </tr>
+                </tbody>    
+            </table>
+        </div>
+
+    </div>
+
+    <!-- awards close  -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.3/vue.min.js'></script>
+    <script  src="js/competitions.js"></script>
+    <footer class="my-5 text-center">
+        <small>
+            <a href="" style="text-decoration:none" class="m-2">Webmaster Team T5248 </a>
+            <br>
+            <a href="" style="text-decoration:none" class="m-2">COPYRIGHT © 2018. West Windsor Plainsboro High School North TSA</a>
+        </small>
+    </footer>
+
+    <script src="js/animsition.min.js"></script>
+
+    <script>
+        var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+        //var isChrome = !!window.chrome && !!wind.chrome.webstore;
+
+        if(isChrome)
+        {
+            $(document).ready(function() {
+                $(".animsition").animsition({
+                    inClass: 'zoom-in',
+                    outClass: 'zoom-out',
+                    inDuration: 1500,
+                    outDuration: 800,
+                    linkElement: '.animsition-link',
+                    loading: true,
+                    loadingParentElement: 'body', 
+                    loadingClass: 'animsition-loading',
+                    loadingInner: '', 
+                    timeout: false,
+                    timeoutCountdown: 5000,
+                    onLoadEvent: true,
+                    browser: [ 'animation-duration', '-webkit-animation-duration'],
+                    overlay : false,
+                    overlayClass : 'animsition-overlay-slide',
+                    overlayParentElement : 'body',
+                    transition: function(url){ window.location.href = url; }
+                });
+            });
+        }
+
+        else
+        {
+            var NAME = document.getElementById("ani");
+            var currentClass = NAME.className;
+            NAME.className = "";
+
+            var NAME = document.getElementById("cte");
+            var currentClass = NAME.className;
+            NAME.className = "btn btn-outline-light my-3 my-sm-0 ml-lg-3";
+            
+            var NAME = document.getElementById("design");
+            var currentClass = NAME.className;
+            NAME.className = "btn btn-outline-light my-3 my-sm-0 ml-lg-3";
+
+            var NAME = document.getElementById("about");
+            var currentClass = NAME.className;
+            NAME.className = "btn btn-outline-light my-3 my-sm-0 ml-lg-3";
+        }
+    </script>
+    </body>
+</div> 
+</html>

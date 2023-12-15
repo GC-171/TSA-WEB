@@ -1,0 +1,25 @@
+table {
+    border-collapse:separate; 
+border-spacing:2em;
+}
+#awards table th,#awards .table tbody {
+    text-align: center;
+}
+#awards td {
+color: black;
+  font-weight: 400;
+}
+#awards tr {
+    border : 1px solid black;
+    padding-top : 10%;
+}
+#awards .table {
+    border-radius: 5px;
+    width: 50%;
+    margin: auto;   
+    float: none;
+}
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
