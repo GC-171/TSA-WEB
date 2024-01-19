@@ -4,6 +4,9 @@
 .custom2 { 
     background-color: #3BB893;
 }
+.custom2-border {
+    border-color: #3BB893;
+}
 .custom3 { 
     background-color: #3BA7B8;
 }
@@ -25,4 +28,23 @@
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
+}
+
+.custom8 {
+    background-color: gray;
+}
+.custom9 {
+    background-color: lightgrey;
+}
+.custom10 {
+    color: lightgrey;
+}
+
+.custom11 {
+    background-image: url("images/writing-work-pen-office-brand-cash-1238368-pxhere.com.jpg");
+}
+
+.custom12 {
+    background-image: url("images/water-nature-grass-light-lawn-meadow-1062530-pxhere.com.jpg");
+    
 }
