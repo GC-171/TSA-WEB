@@ -13,3 +13,16 @@
 .custom5 { 
     background-color: #4F19B7;
 }
+
+.custom6 {
+    background-image: url("images/texture-usa-money-business-paper-cash-1354491-pxhere.com.jpg");
+}
+
+.custom7 {
+    font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
