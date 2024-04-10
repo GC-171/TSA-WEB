@@ -55,3 +55,17 @@ body {
 .custom13 {
     background-color: rgb(19, 119, 86);
 }
+.TypeHeader {
+    font-size: 100px;
+    text-shadow: 4px 2px rgba(161, 161, 161, 0.55) ;
+}
+.NavShadow  {
+    text-shadow: 1px 1px rgba(0, 0, 0, .25) ;
+}
+
+.UnderLine {
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+    font-weight: 500;
+    color: rgb(119, 158, 122);
+}
